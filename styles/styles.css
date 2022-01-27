@@ -1,0 +1,9 @@
+/** tag selectors **/
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/** class selectors **/
+.navbar-brand{
+    font-family: 'Montserrat', sans-serif; 
+}
