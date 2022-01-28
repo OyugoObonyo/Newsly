@@ -9,5 +9,6 @@ body{
 }
 
 /** id selectors **/
-.articles{
-    margin-top: 3px;
+#articles{
+    margin-top: 10px;
+}
