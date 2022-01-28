@@ -1,17 +1,22 @@
-import flask
-from flask import Flask
+from flask import Flask, render_template
 from newsapi import NewsApiClient
+from decouple import config
+import datetime
+from datetime import timedelta
 
 
-app = Flask(__name__) 
-newsapi = NewsApiClient(api_key='e1dda8521e944c7d8b572531800c210e')
-sources = newsapi.get_sources()['sources']
+app = Flask(__name__)
+KEY = config('API_KEY')
+newsapi = NewsApiClient(api_key=KEY)
+today = datetime.datetime.now()
+three_days_ago = (today - timedelta(days=3)).date()
 
 
 @app.route('/')
 @app.route('/index')
 def index():
-    pass
+    articles = newsapi.get_everything()
+    return render_template('index.html', articles=articles)
 
 
 @app.route('/get_news/<keyword>')
