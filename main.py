@@ -15,7 +15,7 @@ three_days_ago = (today - timedelta(days=3)).date()
 @app.route('/')
 @app.route('/index')
 def index():
-    news = newsapi.get_everything(sources="bbc-news,cnn,the-verge",
+    news = newsapi.get_everything(sources="bbc-news,cnn,espn,the-verge,bloomberg",
                                   from_param=three_days_ago,
                                   language='en')
     # Get articles list from the news dict
