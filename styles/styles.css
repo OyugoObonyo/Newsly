@@ -7,3 +7,7 @@ body{
 .navbar-brand{
     font-family: 'Montserrat', sans-serif; 
 }
+
+/** id selectors **/
+.articles{
+    margin-top: 3px;
