@@ -15,10 +15,22 @@ three_days_ago = (today - timedelta(days=3)).date()
 @app.route('/')
 @app.route('/index')
 def index():
-    articles = newsapi.get_everything()
+    news = newsapi.get_everything(sources="bbc-news,cnn,the-verge",
+                                  from_param=three_days_ago,
+                                  language='en')
+    # Get articles list from the news dict
+    articles = news['articles']
     return render_template('index.html', articles=articles)
 
 
-@app.route('/get_news/<keyword>')
-def get_news():
-    pass
+@app.route('/get_news/<s>')
+def get_news(s):
+    news = newsapi.get_everything(sources=s,
+                                  from_param=three_days_ago,
+                                  language='en')
+    articles = news['articles']
+    return render_template('filter.html', articles=articles)
+
+
+if __name__ == "__main__":
+    app.run()
