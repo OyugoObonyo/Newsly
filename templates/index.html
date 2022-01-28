@@ -13,109 +13,107 @@
         <title>Newsly</title>
     </head>
     <body>
-        <!-- A search button to enable users to browse topics -->
-            <nav class="navbar navbar-light bg-primary fixed-top">
-                <div class="container-fluid">
-                  <a class="navbar-brand text-white mx-auto" href="#">Newsly</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Categories</h5>
-                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Browse a topic..." aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                      </form>
-                    <div class="offcanvas-body">
-                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link active dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Business
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                              <li><a class="dropdown-item" href="#">Australian Financial Review</a></li>
-                              <li><a class="dropdown-item" href="#">Bloomberg</a></li>
-                              <li><a class="dropdown-item" href="#">Business Insider</a></li>
-                              <li><a class="dropdown-item" href="#">Financial Post</a></li>
-                              <li><a class="dropdown-item" href="#">The Wall Street Journal</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link active dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Entertainment
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                              <li><a class="dropdown-item" href="#">Buzz Feed</a></li>
-                              <li><a class="dropdown-item" href="#">Entertainment Weekly</a></li>
-                              <li><a class="dropdown-item" href="#">MTV News</a></li>
-                              <li><a class="dropdown-item" href="#">Polygon</a></li>
-                              <li><a class="dropdown-item" href="#">The Lad Bible</a></li>
-                            </ul>
-                        </li>  
-                        <li class="nav-item dropdown">
-                            <a class="nav-link active dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Health
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                              <li><a class="dropdown-item" href="#">Medical News Today</a></li>
-                            </ul>
-                          </li>
-                          <li class="nav-item dropdown">
-                            <a class="nav-link active dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Science
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                              <li><a class="dropdown-item" href="#">National Geographic</a></li>
-                              <li><a class="dropdown-item" href="#">New Scientist</a></li>
-                              <li><a class="dropdown-item" href="#">Next Big Future</a></li>
-                            </ul>
-                          </li>
-                          <li class="nav-item dropdown">
-                            <a class="nav-link active dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Sports
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                              <li><a class="dropdown-item" href="#">BBC Sports</a></li>
-                              <li><a class="dropdown-item" href="#">Bleacher Report</a></li>
-                              <li><a class="dropdown-item" href="#">ESPN</a></li>
-                              <li><a class="dropdown-item" href="#">FourFourTwo</a></li>
-                              <li><a class="dropdown-item" href="#">Fox Sports</a></li>
-                            </ul>
-                          </li>
-                          <li class="nav-item dropdown">
-                            <a class="nav-link active dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Technology
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                              <li><a class="dropdown-item" href="#">Crypto Coin News</a></li>
-                              <li><a class="dropdown-item" href="#">Hacker News</a></li>
-                              <li><a class="dropdown-item" href="#">TechCrunch</a></li>
-                              <li><a class="dropdown-item" href="#">The Verge</a></li>
-                              <li><a class="dropdown-item" href="#">Wired</a></li>
-                            </ul>
-                          </li>
-                          <li class="nav-item dropdown">
-                            <a class="nav-link active dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              World News
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                              <li><a class="dropdown-item" href="#">Al Jazeera English</a></li>
-                              <li><a class="dropdown-item" href="#">Associated Press(AP)</a></li>
-                              <li><a class="dropdown-item" href="#">BBC News</a></li>
-                              <li><a class="dropdown-item" href="#">CNN</a></li>
-                              <li><a class="dropdown-item" href="#">Vice News</a></li>
-                            </ul>
-                          </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </nav>
+      <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white mx-auto" href="#">newsly</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Business 
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Australian Financial Review</a></li>
+                  <li><a class="dropdown-item" href="#">Bloomberg</a></li>
+                  <li><a class="dropdown-item" href="#">Business Insider</a></li>
+                  <li><a class="dropdown-item" href="#">Financial Post</a></li>
+                  <li><a class="dropdown-item" href="#">The Wall Street Journal</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Entertainment
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Buzz Feed</a></li>
+                  <li><a class="dropdown-item" href="#">Entertainment Weekly</a></li>
+                  <li><a class="dropdown-item" href="#">MTV News</a></li>
+                  <li><a class="dropdown-item" href="#">Polygon</a></li>
+                  <li><a class="dropdown-item" href="#">The Lad Bible</a></li>
+                </ul>
+              </li>  
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Health
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Medical News Today</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Science
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">National Geographic</a></li>
+                  <li><a class="dropdown-item" href="#">New Scientist</a></li>
+                  <li><a class="dropdown-item" href="#">Next Big Future</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Sports
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">BBC Sports</a></li>
+                  <li><a class="dropdown-item" href="#">Bleacher Report</a></li>
+                  <li><a class="dropdown-item" href="#">ESPN</a></li>
+                  <li><a class="dropdown-item" href="#">FourFourTwo</a></li>
+                  <li><a class="dropdown-item" href="#">Fox Sports</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Technology
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Crypto Coin News</a></li>
+                  <li><a class="dropdown-item" href="#">Hacker News</a></li>
+                  <li><a class="dropdown-item" href="#">TechCrunch</a></li>
+                  <li><a class="dropdown-item" href="#">The Verge</a></li>
+                  <li><a class="dropdown-item" href="#">Wired</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  World News
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Al Jazeera English</a></li>
+                  <li><a class="dropdown-item" href="#">Associated Press(AP)</a></li>
+                  <li><a class="dropdown-item" href="#">BBC News</a></li>
+                  <li><a class="dropdown-item" href="#">CNN</a></li>
+                  <li><a class="dropdown-item" href="#">Vice News</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Browse a topic..." aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-        <p><h1>Hello world</h1></p>
+      </nav>
+      
+        <p>Hello world 1</p>
+        <p>Hello world 2</p>
+        <p>Hello world 3</p>
+        <p>Hello world 4</p>
+        <p>Hello world 5</p>
+        <p>Hello world 6</p>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
         <script src="https://use.fontawesome.com/8a7e53dc3d.js"></script>
     </body>
