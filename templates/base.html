@@ -7,7 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" type="text/css" href="/styles/styles.css">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500&display=swap" rel="stylesheet" type='text/css'>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500&display=swap" rel="stylesheet">
         <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
         <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
         <title>Newsly</title>
@@ -26,11 +26,11 @@
                   Business 
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Australian Financial Review</a></li>
-                  <li><a class="dropdown-item" href="#">Bloomberg</a></li>
-                  <li><a class="dropdown-item" href="#">Business Insider</a></li>
-                  <li><a class="dropdown-item" href="#">Financial Post</a></li>
-                  <li><a class="dropdown-item" href="#">The Wall Street Journal</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('get_news', s='australian-financial-review') }}">Australian Financial Review</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('get_news', s='bloomberg') }}">Bloomberg</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('get_news', s='business-insider') }}">Business Insider</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('get_news', s='financial-post') }}">Financial Post</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('get_news', s='the-wall-street-journal') }}">The Wall Street Journal</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -38,11 +38,11 @@
                   Entertainment
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Buzz Feed</a></li>
-                  <li><a class="dropdown-item" href="#">Entertainment Weekly</a></li>
-                  <li><a class="dropdown-item" href="#">MTV News</a></li>
-                  <li><a class="dropdown-item" href="#">Polygon</a></li>
-                  <li><a class="dropdown-item" href="#">The Lad Bible</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('get_news', s='buzzfeed') }}">Buzz Feed</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('get_news', s='entertainment-weekly') }}">Entertainment Weekly</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('get_news', s='mtv-news') }}">MTV News</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('get_news', s='polygon') }}">Polygon</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('get_news', s='the-lad-bible') }}">The Lad Bible</a></li>
                 </ul>
               </li>  
               <li class="nav-item dropdown">
@@ -50,7 +50,7 @@
                   Health
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Medical News Today</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('get_news', s='medical-news-today') }}">Medical News Today</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -58,9 +58,9 @@
                   Science
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">National Geographic</a></li>
-                  <li><a class="dropdown-item" href="#">New Scientist</a></li>
-                  <li><a class="dropdown-item" href="#">Next Big Future</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('get_news', s='national-geographic') }}">National Geographic</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('get_news', s='new-scientist') }}">New Scientist</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('get_news', s='next-big-future') }}">Next Big Future</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -68,11 +68,11 @@
                   Sports
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">BBC Sports</a></li>
-                  <li><a class="dropdown-item" href="#">Bleacher Report</a></li>
-                  <li><a class="dropdown-item" href="#">ESPN</a></li>
-                  <li><a class="dropdown-item" href="#">FourFourTwo</a></li>
-                  <li><a class="dropdown-item" href="#">Fox Sports</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('get_news', s='bbc-sport') }}">BBC Sports</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('get_news', s='bleacher-report') }}">Bleacher Report</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('get_news', s='espn') }}">ESPN</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('get_news', s='four-four-two') }}">FourFourTwo</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('get_news', s='fox-sports') }}">Fox Sports</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -80,11 +80,11 @@
                   Technology
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Crypto Coin News</a></li>
-                  <li><a class="dropdown-item" href="#">Hacker News</a></li>
-                  <li><a class="dropdown-item" href="#">TechCrunch</a></li>
-                  <li><a class="dropdown-item" href="#">The Verge</a></li>
-                  <li><a class="dropdown-item" href="#">Wired</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('get_news', s='crypto-coins-news') }}">Crypto Coin News</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('get_news', s='hacker-news') }}">Hacker News</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('get_news', s='techcrunch') }}">TechCrunch</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('get_news', s='the-verge') }}">The Verge</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('get_news', s='wired') }}">Wired</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -92,18 +92,14 @@
                   World News
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Al Jazeera English</a></li>
-                  <li><a class="dropdown-item" href="#">Associated Press(AP)</a></li>
-                  <li><a class="dropdown-item" href="#">BBC News</a></li>
-                  <li><a class="dropdown-item" href="#">CNN</a></li>
-                  <li><a class="dropdown-item" href="#">Vice News</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('get_news', s='al-jazeera-english') }}">Al Jazeera English</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('get_news', s='associated-press') }}">Associated Press(AP)</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('get_news', s='bbc-news') }}">BBC News</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('get_news', s='cnn') }}">CNN</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('get_news', s='vice-news') }}">Vice News</a></li>
                 </ul>
               </li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Browse a topic..." aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
           </div>
         </div>
       </nav>
