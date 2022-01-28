@@ -1,0 +1,13 @@
+<section id="articles">
+    <div class="container">
+    <div class="row">
+      {% for article in articles %}
+      <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+        <div class="card">
+              <img src="{{ article['urlToImage'] }}" class="card-img-top" height = 200 object-fit="centre"> 
+              <p><a href="{{ article['url'] }}">{{ article['title'] }}</a></p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
